@@ -3,13 +3,14 @@
 
 ## here are the query and mutation structures
 
-
+#
 mutation editrestaurants($idd: Int = 1, $name: String = "OLDO"){
 editrestaurant(id: $idd, name: $name){
 name
 description
 }
 }
+#
 mutation setrestaurants {
 setrestaurant(input: {
 name: "Granite",
@@ -18,6 +19,7 @@ name
 description
 }
 }
+#
 mutation deleterestaurants($idd: Int = 1){
   deleterestaurant(id: $idd){
 ok
