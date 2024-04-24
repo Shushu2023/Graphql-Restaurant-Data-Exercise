@@ -25,6 +25,7 @@ mutation deleterestaurants($idd: Int = 1){
 ok
 }
 }
+#
 query getrestaurants {
 restaurants {
 name
@@ -35,6 +36,7 @@ price
 }
 }
 }
+#
 query getrestaurant($iid: Int = 1){
     restaurant(id:$iid){
 name
